@@ -241,6 +241,7 @@ export default function Home() {
             <TableHeader>
               {table.getHeaderGroups().map((headerGroup) => (
                 <TableRow key={headerGroup.id}>
+                  <TableHead></TableHead>
                   {headerGroup.headers.map((header) => {
                     return (
                       <TableHead key={header.id}>
