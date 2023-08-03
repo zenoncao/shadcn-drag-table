@@ -37,14 +37,14 @@ import {
   Row
 } from "@tanstack/react-table"
 
-export type Payment = {
+type Payment = {
   id: string
   amount: number
   status: "pending" | "processing" | "success" | "failed"
   email: string
 }
 
-export const columns: ColumnDef<Payment>[] = [
+const columns: ColumnDef<Payment>[] = [
   {
     id: "select",
     header: ({ table }) => (
